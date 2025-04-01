@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글펀 | 글을 즐기다!</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/share.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="inner-header">
+                <div class="top-header">
+                    <div class="left-box">
+                        <a href="#" style="display: flex; position: relative; cursor: default;">
+                            <div class="notice-box">📢 공지</div>
+                            <div class="popup">
+                                <div class="top-popup">
+                                    <div class="popup-title">📢 공지</div>
+                                    <div class="close-btn"><img src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/all-icons/x-919o2m0hea73deh80x64u2.png/x-b8u46hdovcz62tsfbgky7.png?_a=DAJFJtWIZAAC" alt=""></div>
+                                </div>
+                                <div class="popup-contents">
+                                    오류가 발생하지 않게 <b>chrome 브라우저 사용</b>을 권장합니다.<br>본 사이트의 모든 콘텐츠(도서, 이미지 등)는 저작권법에 의해 보호됩니다. 무단 복제, 배포, 수정 등은 강력한 법적 처벌을 받을 수 있습니다.
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#"><div class="event-box">작품 읽고 남기는 리뷰 이벤트!</div></a>
+                    </div>
+                    <p>누구나 작가가 될 수 있다!</p>
+                    <div class="join-box">
+                        <a href="#"><div class="customer-service-center">고객센터</div></a>
+                        <a href="#"><div class="create">sign up</div></a>
+                        <a href="#" style="display: flex; position: relative; cursor: default;">
+                            <form action="">
+                                <div class="login">log in</div>
+                                <div class="login-box">
+                                    <div class="close-btn"><img src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/all-icons/x-919o2m0hea73deh80x64u2.png/x-b8u46hdovcz62tsfbgky7.png?_a=DAJFJtWIZAAC" alt=""></div>
+                                    <div class="profile-box"><div class="profile"></div></div>
+                                    <div class="login-title">로그인하기</div>
+                                    <div class="login-input-box">
+                                        <div class="id-input">
+                                            <input type="text" placeholder="아이디" oninput="handleOnInput(this)">
+                                        </div>
+                                        <div class="password-input">
+                                            <input type="password" placeholder="비밀번호">
+                                        </div>
+                                    </div>
+                                    <div class="or-login">
+                                        <div class="or-text"><span class="bar"></span><p>또는</p><span class="bar"></span></div>
+                                        <div class="google-login">
+                                            <div class="google-icon"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </a>
+                        <a href="#"><div class="user"></div></a>
+                    </div>
+                </div>
+                <div class="center-header">
+                    <a href="#"><div class="header__logo logo">GeulFun</div></a>
+                </div>
+                <div class="bottom-header">
+                    <div class="left-box">
+                        <a href="./index.html"><div class="bottom-header-logo logo">GeulFun</div></a>
+                        <div class="bottom-header-nav">
+                            <ul>
+                                <li><a href="#" class="best-hover">베스트셀러</a></li>
+                                <li><a href="#" class="mystery-hover">추리</a></li>
+                                <li><a href="#" class="romance-hover">로맨스</a></li>
+                                <li><a href="#" class="thriller-hover">스릴러</a></li>
+                                <li><a href="#" class="horror-hover">공포</a></li>
+                                <li><a href="#" class="horror-hover">과학</a></li>
+                                <li><a href="#" class="fantasy-hover">판타지</a></li>
+                                <li><a href="#" class="martial-arts-hover">무협</a></li>
+                                <li><a href="#" class="game-hover">게임</a></li>
+                                <li><a href="#">무료</a></li>
+                                <li><a href="#" class="open-category-menu">모든 카테고리</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__search">
+                        <div class="search-input"><input type="text" placeholder="작품 제목을 검색하세요!"></div>
+                        <a href="#"><div class="search-btn">검색</div></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="category-menu">
+                <div class="category-menu-title">모든 카테고리</div>
+                <div class="all-category-group">
+                    <div class="category-min-group">
+                        <div class="category-main-menu"><a href="#">소설</a></div>
+                        <div class="category-sub-menu-group">
+                            <a href="#"><div class="category-sub-menu">베스트셀러</div></a>
+                            <a href="#"><div class="category-sub-menu">추리</div></a>
+                            <a href="#"><div class="category-sub-menu">로맨스</div></a>
+                            <a href="#"><div class="category-sub-menu">스릴러</div></a>
+                            <a href="#"><div class="category-sub-menu">공포</div></a>
+                            <a href="#"><div class="category-sub-menu">과학</div></a>
+                            <a href="#"><div class="category-sub-menu">판타지</div></a>
+                            <a href="#"><div class="category-sub-menu">무협</div></a>
+                            <a href="#"><div class="category-sub-menu">게임</div></a>
+                            <a href="#"><div class="category-sub-menu">무료</div></a>
+                        </div>
+                    </div>
+                    <div class="category-min-group">
+                        <div class="category-main-menu"><a href="#">만화</a></div>
+                        <div class="category-sub-menu-group">
+                            <a href="#"><div class="category-sub-menu">베스트셀러</div></a>
+                            <a href="#"><div class="category-sub-menu">추리</div></a>
+                            <a href="#"><div class="category-sub-menu">로맨스</div></a>
+                            <a href="#"><div class="category-sub-menu">스릴러</div></a>
+                            <a href="#"><div class="category-sub-menu">공포</div></a>
+                            <a href="#"><div class="category-sub-menu">과학</div></a>
+                            <a href="#"><div class="category-sub-menu">판타지</div></a>
+                            <a href="#"><div class="category-sub-menu">무협</div></a>
+                            <a href="#"><div class="category-sub-menu">게임</div></a>
+                            <a href="#"><div class="category-sub-menu">무료</div></a>
+                        </div>
+                    </div>
+                    <div class="category-min-group">
+                        <div class="category-main-menu"><a href="#">시</a></div>
+                        <div class="category-sub-menu-group">
+                            <a href="#"><div class="category-sub-menu">베스트셀러</div></a>
+                            <a href="#"><div class="category-sub-menu">추리</div></a>
+                            <a href="#"><div class="category-sub-menu">로맨스</div></a>
+                            <a href="#"><div class="category-sub-menu">스릴러</div></a>
+                            <a href="#"><div class="category-sub-menu">공포</div></a>
+                            <a href="#"><div class="category-sub-menu">과학</div></a>
+                            <a href="#"><div class="category-sub-menu">판타지</div></a>
+                            <a href="#"><div class="category-sub-menu">무협</div></a>
+                            <a href="#"><div class="category-sub-menu">게임</div></a>
+                            <a href="#"><div class="category-sub-menu">무료</div></a>
+                        </div>
+                    </div>
+                    <div class="category-min-group">
+                        <div class="category-main-menu"><a href="#">기타</a></div>
+                        <div class="category-sub-menu-group">
+                            <a href="#"><div class="category-sub-menu">베스트셀러</div></a>
+                            <a href="#"><div class="category-sub-menu">추리</div></a>
+                            <a href="#"><div class="category-sub-menu">로맨스</div></a>
+                            <a href="#"><div class="category-sub-menu">스릴러</div></a>
+                            <a href="#"><div class="category-sub-menu">공포</div></a>
+                            <a href="#"><div class="category-sub-menu">과학</div></a>
+                            <a href="#"><div class="category-sub-menu">판타지</div></a>
+                            <a href="#"><div class="category-sub-menu">무협</div></a>
+                            <a href="#"><div class="category-sub-menu">게임</div></a>
+                            <a href="#"><div class="category-sub-menu">무료</div></a>
+                        </div>
+                    </div>
+                    <div class="category-min-group">
+                        <div class="category-main-menu"><a href="#">청소년 관람불가</a></div>
+                        <div class="category-sub-menu-group">
+                            <a href="#"><div class="category-sub-menu">베스트셀러</div></a>
+                            <a href="#"><div class="category-sub-menu">추리</div></a>
+                            <a href="#"><div class="category-sub-menu">로맨스</div></a>
+                            <a href="#"><div class="category-sub-menu">스릴러</div></a>
+                            <a href="#"><div class="category-sub-menu">공포</div></a>
+                            <a href="#"><div class="category-sub-menu">과학</div></a>
+                            <a href="#"><div class="category-sub-menu">판타지</div></a>
+                            <a href="#"><div class="category-sub-menu">무협</div></a>
+                            <a href="#"><div class="category-sub-menu">게임</div></a>
+                            <a href="#"><div class="category-sub-menu">무료</div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-banner-slide">
+                <ul class="slide">
+                    <li class="first-banner">GeulFun!</li>
+                    <li class="second-banner">GeulFun!</li>
+                    <li class="third-banner">GeulFun!</li>
+                    <li class="first-banner">GeulFun!</li>
+                </ul>
+                <div class="indicator">
+                    <div class="current-index-number"></div>
+                    <span>/</span>
+                    <div class="current-index-length"></div>
+                </div>
+            </div>
+            <div class="midium-void"></div>
+            <div class="main__flex">
+                <div class="popular">
+                    <p class="title">글펀에서 보장하는 누구나 좋아할만한 베스트 소설들</p>
+                    <div class="book-list">
+                        <ul>
+                            <li class="book1-style">
+                                <a href="./book1.html">
+                                    <p class="book-title"></p>
+                                    <span class="rank-number">1위</span>
+                                    <div class="book-style-group">
+                                        <span class="book-style first-place">2025년 1월 베스트셀러</span>
+                                    </div>
+                                    <div class="book-info">
+                                        <div class="book-info-text">
+                                            <p class="book-info-text-style"></p>
+                                            <div class="top-book-info-text">
+                                                <p class="book-info-text-category mystery">추리</p>
+                                                <p class="star-info">★ 5.0</p>
+                                            </div>
+                                            <p class="book-info-text-title">숨겨진 그림자</p>
+                                            <p class="book-info-text-price">2,000￦</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="book-title">sample book #02</p>
+                                    <span class="rank-number">2위</span>
+                                    <div class="book-info">
+                                        <div class="book-info-text">
+                                            <p class="book-info-text-style"></p>
+                                            <p class="book-info-text-category romance">로맨스</p>
+                                            <p class="book-info-text-title">sample book #02</p>
+                                            <p class="book-info-text-price">2,400￦</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="book-title">sample book #03</p>
+                                    <span class="rank-number">3위</span>
+                                    <div class="book-info">
+                                        <div class="book-info-text">
+                                            <p class="book-info-text-style"></p>
+                                            <p class="book-info-text-category martial-arts">무협</p>
+                                            <p class="book-info-text-title">sample book #03</p>
+                                            <p class="book-info-text-price">2,400￦</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="book-title">sample book #04</p>
+                                    <span class="rank-number">4위</span>
+                                    <div class="book-info">
+                                        <div class="book-info-text">
+                                            <p class="book-info-text-style"></p>
+                                            <p class="book-info-text-category thriller">스릴러</p>
+                                            <p class="book-info-text-title">sample book #04</p>
+                                            <p class="book-info-text-price">2,400￦</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="book-title">sample book #05</p>
+                                    <span class="rank-number">5위</span>
+                                    <div class="book-info">
+                                        <div class="book-info-text">
+                                            <p class="book-info-text-style"></p>
+                                            <p class="book-info-text-category fantasy">판타지</p>
+                                            <p class="book-info-text-title">sample book #05</p>
+                                            <p class="book-info-text-price">2,400￦</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="./book1.html"><div class="main-side-ads"></div></a>
+            </div>
+            <div class="midium-void"></div>
+            <a href="./book1.html"><div class="main2-ads banner-ads"></div></a>
+            <!-- <a href="./book2.html"><div class="main-ads banner-ads"></div></a>
+            <a href="./book3.html"><div class="main3-ads banner-ads"></div></a> -->
+            <div class="short-novel corner">
+                <p class="title">빠져들기 쉬운 단편소설</p>
+                <div class="book-list">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <p class="book-title">sample book #01</p>
+                                <div class="book-info">
+                                    <div class="book-info-text">
+                                        <p class="book-info-text-style"></p>
+                                        <p class="book-info-text-category horror">공포</p>
+                                        <p class="book-info-text-title">sample book #01</p>
+                                        <p class="book-info-text-price">400￦</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="book-title">sample book #02</p>
+                                <div class="book-info">
+                                    <div class="book-info-text">
+                                        <p class="book-info-text-style"></p>
+                                        <p class="book-info-text-category thriller">스릴러</p>
+                                        <p class="book-info-text-title">sample book #02</p>
+                                        <p class="book-info-text-price">400￦</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="book-title">sample book #03</p>
+                                <div class="book-info">
+                                    <div class="book-info-text">
+                                        <p class="book-info-text-style"></p>
+                                        <p class="book-info-text-category fantasy">판타지</p>
+                                        <p class="book-info-text-title">sample book #03</p>
+                                        <p class="book-info-text-price">400￦</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="book-title">sample book #04</p>
+                                <div class="book-info">
+                                    <div class="book-info-text">
+                                        <p class="book-info-text-style"></p>
+                                        <p class="book-info-text-category thriller">스릴러</p>
+                                        <p class="book-info-text-title">sample book #04</p>
+                                        <p class="book-info-text-price">400￦</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="book-title">sample book #05</p>
+                                <div class="book-info">
+                                    <div class="book-info-text">
+                                        <p class="book-info-text-style"></p>
+                                        <p class="book-info-text-category fantasy">판타지</p>
+                                        <p class="book-info-text-title">sample book #05</p>
+                                        <p class="book-info-text-price">400￦</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="book-title">sample book #06</p>
+                                <div class="book-info">
+                                    <div class="book-info-text">
+                                        <p class="book-info-text-style"></p>
+                                        <p class="book-info-text-category horror">공포</p>
+                                        <p class="book-info-text-title">sample book #06</p>
+                                        <p class="book-info-text-price">400￦</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <a href="#"><div class="see-more">more</div></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="romance-corner corner">
+                <p class="title">학창시절 풋풋한&nbsp;<mark style="background-color: #ffdbf7;">로맨스</mark></p>
+                <div class="book-list">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <p class="book-title">sample book #01</p>
+                                <div class="book-info">
+                                    <div class="book-info-text">
+                                        <p class="book-info-text-style"></p>
+                                        <p class="book-info-text-category romance">로맨스</p>
+                                        <p class="book-info-text-title">sample book #01</p>
+                                        <p class="book-info-text-price">2,400￦</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="book-title">sample book #02</p>
+                                <div class="book-info">
+                                    <div class="book-info-text">
+                                        <p class="book-info-text-style"></p>
+                                        <p class="book-info-text-category romance">로맨스</p>
+                                        <p class="book-info-text-title">sample book #02</p>
+                                        <p class="book-info-text-price">2,400￦</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="book2-style">
+                            <a href="./book2.html">
+                                <p class="book-title"></p>
+                                <div class="book-style-group">
+                                    <span class="book-style romance-place">2025년 로맨스 3위!</span>
+                                </div>
+                                <div class="book-info">
+                                    <div class="book-info-text">
+                                        <p class="book-info-text-style"></p>
+                                        <div class="top-book-info-text">
+                                            <p class="book-info-text-category romance">로맨스</p>
+                                            <p class="star-info">★ 4.2</p>
+                                        </div>
+                                        <p class="book-info-text-title">담벼락</p>
+                                        <p class="book-info-text-price">2,400￦</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="book-title">sample book #04</p>
+                                <div class="book-info">
+                                    <div class="book-info-text">
+                                        <p class="book-info-text-style"></p>
+                                        <p class="book-info-text-category romance">로맨스</p>
+                                        <p class="book-info-text-title">sample book #04</p>
+                                        <p class="book-info-text-price">2,400￦</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="book-title">sample book #05</p>
+                                <div class="book-info">
+                                    <div class="book-info-text">
+                                        <p class="book-info-text-style"></p>
+                                        <p class="book-info-text-category romance">로맨스</p>
+                                        <p class="book-info-text-title">sample book #05</p>
+                                        <p class="book-info-text-price">2,400￦</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="book-title">sample book #06</p>
+                                <div class="book-info">
+                                    <div class="book-info-text">
+                                        <p class="book-info-text-style"></p>
+                                        <p class="book-info-text-category romance">로맨스</p>
+                                        <p class="book-info-text-title">sample book #06</p>
+                                        <p class="book-info-text-price">2,400￦</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <a href="#"><div class="see-more">more</div></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="geulfun-best corner last-corner">
+                <p class="title">힐링이 필요한 당신을 위한 작품들</p>
+                <div class="book-list">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <p class="book-title">sample book #01</p>
+                                <div class="book-info">
+                                    <div class="book-info-text">
+                                        <p class="book-info-text-style"></p>
+                                        <p class="book-info-text-category romance">로맨스</p>
+                                        <p class="book-info-text-title">sample book #01</p>
+                                        <p class="book-info-text-price">2,400￦</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="book-title">sample book #02</p>
+                                <div class="book-info">
+                                    <div class="book-info-text">
+                                        <p class="book-info-text-style"></p>
+                                        <p class="book-info-text-category romance">로맨스</p>
+                                        <p class="book-info-text-title">sample book #02</p>
+                                        <p class="book-info-text-price">2,400￦</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="book-title">sample book #05</p>
+                                <div class="book-info">
+                                    <div class="book-info-text">
+                                        <p class="book-info-text-style"></p>
+                                        <p class="book-info-text-category fantasy">판타지</p>
+                                        <p class="book-info-text-title">sample book #05</p>
+                                        <p class="book-info-text-price">2,400￦</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="book3-style">
+                            <a href="#">
+                                <p class="book-title"></p>
+                                <div class="book-info">
+                                    <div class="book-info-text">
+                                        <p class="book-info-text-style"></p>
+                                        <p class="book-info-text-category fantasy">판타지</p>
+                                        <p class="book-info-text-title">습한 겨울</p>
+                                        <p class="book-info-text-price">2,400￦</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="book-title">sample book #04</p>
+                                <div class="book-info">
+                                    <div class="book-info-text">
+                                        <p class="book-info-text-style"></p>
+                                        <p class="book-info-text-category fantasy">판타지</p>
+                                        <p class="book-info-text-title">sample book #04</p>
+                                        <p class="book-info-text-price">2,400￦</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="book-title">sample book #06</p>
+                                <div class="book-info">
+                                    <div class="book-info-text">
+                                        <p class="book-info-text-style"></p>
+                                        <p class="book-info-text-category fantasy">판타지</p>
+                                        <p class="book-info-text-title">sample book #06</p>
+                                        <p class="book-info-text-price">2,400￦</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <a href="#"><div class="see-more">more</div></a>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="inner-footer">
+                <div class="top-footer">
+                    <div class="footer__logo logo"><a href="#">GeulFun</a></div>
+                </div>
+                <div class="center-footer">
+                    <div class="center-footer-text">
+                        <a href="#">This is where writing and reading become fun.</a>
+                        <a href="#">I hope that happiness is conveyed through words.</a>
+                    </div>
+                    <div class="footer__sns-nav">
+                        <ul>
+                            <li><a href="#">face<br>book</a></li>
+                            <li><a href="#">insta<br>gram</a></li>
+                            <li><a href="#">twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom-footer">
+                    <div class="bottom-footer-group">
+                        <div class="copyright">&copy; 2025. seungchan Kim All rights reserved.</div>
+                        <div class="footer__nav">
+                            <ul>
+                                <li><a href="#">이용약관</a></li>
+                                <div class="bar"></div>
+                                <li><a href="#"><b>개인정보 처리방침</b></a></li>
+                                <div class="bar"></div>
+                                <li><a href="#">청소년보호정책</a></li>
+                                <div class="bar"></div>
+                                <li><a href="#">사업자정보확인</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__sns-nav">
+                        <ul>
+                            <li><a href="#">email</a></li>
+                            <li><a href="#">you<br>tube</a></li>
+                            <li><a href="#">discord</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="top-scroll-btn">↑</div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="./js/main.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
